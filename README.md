@@ -2,6 +2,14 @@
 
 Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
+## Modification
+
+This theme is originally written by [@yoshiharuyamashita](https://github.com/yoshiharuyamashita). I modified:
+
+* Use `content/posts` instead of `content/post`.
+* Do not import mathjax in `head`. It is imported in footer (`footer_mathjax.html`).
+* Look up `disable_mathjax` parameter using `$.Param` function. This makes able to disable mathjax globally.
+
 ## Overview
 
 * Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
