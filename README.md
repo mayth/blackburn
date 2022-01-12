@@ -49,7 +49,7 @@ This theme is originally written by [@yoshiharuyamashita](https://github.com/yos
 
 ## Demo
 
-* [Demo](http://themes.gohugo.io/theme/blackburn/)
+* [Demo](http://themes.gohugo.io/themes/blackburn/)
 * You can also see it in action on my personal website [here](http://yoshiharuyamashita.com/)
 
 ## Screenshots
