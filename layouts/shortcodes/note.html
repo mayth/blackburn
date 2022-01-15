@@ -1,0 +1,8 @@
+{{ if le (len .Inner) 0 }}
+{{ errorf "missing content: %s" .Position }}
+{{ else }}
+<div class="note">
+  <div class="note-header">Note</div>    
+  <div class="note-content">{{ markdownify .Inner }}</div>
+</div>
+{{ end }}
