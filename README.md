@@ -9,6 +9,9 @@ This theme is originally written by [@yoshiharuyamashita](https://github.com/yos
 * Use `content/posts` instead of `content/post`.
 * Do not import mathjax in `head`. It is imported in footer (`footer_mathjax.html`).
 * Look up `disable_mathjax` parameter using `$.Param` function. This makes able to disable mathjax globally.
+* And other changes to features that have been deprecated or changed in the latest version of Hugo.
+
+The following content from here is not changed from the original.
 
 ## Overview
 
@@ -183,12 +186,12 @@ paginate = 10
 
 
 ## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
- 
+
   ```
  <form action="https://fabform.io/f/{form-id}" method="post">
   <label for="email">Your Email</label>
   <input name="email" type="email">
-  <button type="submit">Submit</button> 
+  <button type="submit">Submit</button>
  </form>
 ```
 
