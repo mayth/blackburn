@@ -12,6 +12,8 @@ This theme is originally written by [@yoshiharuyamashita](https://github.com/yos
 * And other changes to features that have been deprecated or changed in the latest version of Hugo.
 * Use Pure 3.0.0 instead of 1.0.0.
 * Use Font Awesome 7.0.1 instead of 5.15.2.
+* Add support for `integrity` and `crossorigin` attributes in custom CSS/JavaScript.
+  * Items in `params.custom_{css,js}` can be a map such as: `{url = "path/to/file", integrity = "sha512-...", crossorigin = "anonymous"}`. Otherwise, i.e., if an item is just a plain string, it behaves as before.
 
 The following content from here is not changed from the original.
 
