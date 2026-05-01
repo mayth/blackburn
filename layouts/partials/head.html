@@ -11,22 +11,12 @@
     {{ end }}
 
   <!-- CSS -->
-  {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/" }}
-  <link rel="stylesheet" href="{{ $purecss }}pure-min.css">
+  {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.0/" }}
+  <link rel="stylesheet" href="{{ $purecss }}pure-min.css" crossorigin="anonymous" integrity="sha512-EXwWuEObNKT333K9ws2gMH4fmFNqdZp7IL3oG4JZdl9R+ojfSVeTm8I/hzUvLHFBD865Dy8wQqXC/K2T77wpeg==">
 
-  {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-old-ie-min.css">
-  {{ "<![endif]-->" | safeHTML }}
-  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css">
-  {{ "<!--<![endif]-->" | safeHTML }}
+  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css" crossorigin="anonymous" integrity="sha512-+5fK79Sg5Dim8T1KuAxR7AHTz2dI//rzhYphUG5Ak8bKCxNhs1xREHlop5kIU/CPUKw8TcJcm197S0bKKdW9cg==">
 
-  {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
-  {{ "<![endif]-->" | safeHTML }}
-  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
   <link rel="stylesheet" href="/css/side-menu.css">
-  {{ "<!--<![endif]-->" | safeHTML }}
 
   <link rel="stylesheet" href="/css/blackburn.css">
 
