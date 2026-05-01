@@ -17,6 +17,8 @@ This theme is originally written by [@yoshiharuyamashita](https://github.com/yos
 
 The following content from here is not changed from the original.
 
+---
+
 ## Overview
 
 * Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
