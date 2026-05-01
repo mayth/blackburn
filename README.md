@@ -11,6 +11,7 @@ This theme is originally written by [@yoshiharuyamashita](https://github.com/yos
 * Look up `disable_mathjax` parameter using `$.Param` function. This makes able to disable mathjax globally.
 * And other changes to features that have been deprecated or changed in the latest version of Hugo.
 * Use Pure 3.0.0 instead of 1.0.0.
+* Use Font Awesome 7.0.1 instead of 5.15.2.
 
 The following content from here is not changed from the original.
 
