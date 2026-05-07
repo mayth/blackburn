@@ -47,9 +47,9 @@
   {{ range .Site.Params.custom_css }}
     {{ if reflect.IsMap . }}
       {{ if findRE "https?://" .url }}
-      <link rel="stylesheet" href="{{ .url }}"{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}>
+      <link rel="stylesheet" href="{{ .url }}"{{ if (ne hugo.Environment "development") }}{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}{{ end }}>
       {{ else }}
-      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ .url }}"{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}>
+      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ .url }}"{{ if (ne hugo.Environment "development") }}{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}{{ end }}>
       {{ end }}
     {{ else }}
       {{ if findRE "https?://" . }}
@@ -62,9 +62,9 @@
   {{ range .Site.Params.custom_js }}
     {{ if reflect.IsMap . }}
       {{ if findRE "https?://" .url }}
-      <script src="{{ .url }}"{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}></script>
+      <script src="{{ .url }}"{{ if (ne hugo.Environment "development") }}{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}{{ end }}></script>
       {{ else }}
-      <script src="{{ $.Site.BaseURL }}{{ .url }}"{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}></script>
+      <script src="{{ $.Site.BaseURL }}{{ .url }}"{{ if (ne hugo.Environment "development") }}{{ with .integrity }} integrity="{{ . }}"{{ end }}{{ with .crossorigin }} crossorigin="{{ . }}"{{ end }}{{ end }}></script>
       {{ end }}
     {{ else }}
       {{ if findRE "https?://" . }}
